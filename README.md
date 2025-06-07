@@ -5,18 +5,35 @@ ESPNet is a GINE-based graph neural network framework designed to predict earnin
 
 ![Model Structure](./model.png)
 
-## 📂 Files
+## 🧠 Key Features
 
-- `data_sim.R` – R script to simulate synthetic scRNA-seq data.
-- `run_fssc.py` – Main Python script to run FSSC clustering.
-- `run.sh` – Shell script to execute the clustering demo.
+- Graph-based representation of firm–analyst networks
+- Edge-aware message passing using GINE
+- Two-stage earnings surprise classification tasks:
+  - High vs. low ESP magnitude
+  - Positive vs. negative directional surprise
+- Long–short portfolio construction based on predicted signals
+- Robust performance across evaluation metrics
 
+---
 
-## 🛠️ Dependencies
+## 📁 File Structure
 
-The code has been tested with:
+| File / Folder               | Description |
+|----------------------------|-------------|
+| `edgegine_esm_class.py`    | Main implementation of the ESPNet model using GINE with edge features |
+| `pytorchtools_update.py`   | Utility functions for training (e.g., early stopping) |
+| `model.png`                | Visualization of the ESPNet architecture |
+| `Results-Step1/`           | Intermediate model outputs and logs |
+| `Results-Step2/`           | Final prediction results and portfolio evaluation |
+| `README.md`                | This file |
 
-- Python 3.8  
-- PyTorch 1.12   
-- Python packages: `numpy`, `pandas`, `scikit-learn`, `torch`  
+---
+
+## ⚙️ Dependencies
+
+- Python ≥ 3.8  
+- PyTorch ≥ 1.10  
+- PyTorch Geometric ≥ 2.0  
+- scikit-learn, pandas, numpy, tqdm  
 
