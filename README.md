@@ -3,7 +3,7 @@
 This repository provides the official implementation of our ICDM 2025 submission: ESPNet.  
 ESPNet is a GINE-based graph neural network framework designed to predict earnings surprises by modeling analyst–firm interactions as a heterogeneous bipartite graph. The framework integrates edge-aware message passing and relational feature propagation to capture complex financial signals for robust prediction and downstream portfolio analysis.
 
-![Model Structure](./model.jpg)
+![Model Structure](./model.png)
 
 ## 📂 Files
 
